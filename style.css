@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+/**** STYLE GÉNÉRAL ****/
+body {
+	background-color: #F4F4F4;
+	font-family: 'Montserrat', sans-serif;
+	color: #4C5263;
+}
+
+a {
+	text-decoration: none;
+	color: #fd5f00;
+}
+
+#container {
+    background-color: #E9EAED;
+    border: 1px solid #2C3D52;
+}
+
+
+/**** HEADER ****/
+header img {
+	width: 100%;
+}
+
+
+/**** NAV ****/
+nav {
+    border-bottom: 1px solid #C0C5D1;
+}
+
+#nav-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+}
+
+#nav-links li {
+    margin: 20px;
+}
+
+#nav-links a {
+    border: 1px solid white;
+    background-color: #fd5f00;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 7px;
+}
+
+#content {
+    min-height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/**** MAIN CONTENT ****/
+article {
+    width: 75%;
+    box-sizing: border-box;
+    padding: 35px 15px;
+    border-right: 1px solid #C0C5D1;
+    background-color: white;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #0d1128;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-variant: small-caps;
+    color: #0d1128;
+}
+
+article p {
+    text-align: justify;
+}
+
+
+/**** ASIDE ****/
+aside {
+    width: 25%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.aside-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.aside-list li {
+    padding: 8px 12px;
+    font-size: 14px;
+    border-bottom: 1px solid #C0C5D1;
+}
+
+.aside-list li:hover {
+    background: white;
+}
+
+
+/**** FOOTER ****/
+footer {
+	border-top: 1px solid #C0C5D1;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 25px 15px;
+    text-align: center;
+}
+
+.footer-links {
+    padding: 0;
+    list-style-type: none;
+    line-height: 2em;
+}
+
+
+/**** TABLETTE ****/
+@media (max-width: 1024px) {
+	article {
+    	width: 100%;
+	}
+
+	aside {
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+
+	footer {
+		border-top: none;
+	}
+}
+
+
+/**** SMARTPHONE ****/
+@media (max-width: 768px) {
+	aside > section {
+		width: 100%;
+	}
+
+	.footer-links {
+		width: 100%;
+	}
+}
